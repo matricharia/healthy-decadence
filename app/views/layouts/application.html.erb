@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>HealthyDecadence</title>
+	<title>HealthyDecadence</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="col-xs-8 links">
+      <%= link_to 'Home', root_path %>
+    </div>
+    <div class="col-xs-4 links">
+      <%= link_to 'New Recipe', new_recipe_path %>
+    </div>
+    <br /><br />
 
 <div class="container">
 	<%= yield %>

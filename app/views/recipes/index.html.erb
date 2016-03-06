@@ -1,7 +1,10 @@
 <h1>Healthy Decadence</h1>
 
-<div>
-	<h2><%= @recipe.tittle %></h2>
-	<p><%= @recipe.instructions %></p>
-	<p class="author pull-right">- <%= @recipe.author %></p>
-</div>
+<% @recipe.each do |recipe| %>
+	<div "recipe-box">
+		<h2><%= recipe.tittle %></h2>
+		<p><%= recipe.instructions %></p>
+		<p class="author pull-right">- <%= recipe.author %></p>
+
+	</div>
+<% end %>

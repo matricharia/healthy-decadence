@@ -1,0 +1,8 @@
+<h1>Enter Your Recipe Details</h1>
+<%= simple_form_for @recipe do |f| %>
+	<%= f.input :tittle %>
+	<%= f.input :instructions %>
+	<%= f.input :author %>
+	<br />
+	<%= f.submit 'Create', class: 'btn btn-success' %>
+<% end %>
